@@ -38,7 +38,7 @@
 				<el-table-column prop="configDesc" label="配置描述" width="250">
 				</el-table-column>
 				<el-table-column label="操作" width="100" fixed="right">
-					<template scope="scope">
+					<template slot-scope="scope">
 						<el-button size="small" type="text" @click="handleEdit(scope.$index, scope.row)"><i class="el-icon-edit"></i></el-button>
 						<el-button size="small" type="text" @click="handleDel(scope.$index, scope.row)" ><i class="el-icon-delete"></i></el-button>
 					</template>

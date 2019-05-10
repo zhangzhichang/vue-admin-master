@@ -31,7 +31,7 @@
 				<el-table-column prop="siteDomain" label="网址" width="200">
 				</el-table-column>
 				<el-table-column label="操作" width="100" fixed="right">
-					<template scope="scope">
+					<template slot-scope="scope">
 						<el-button size="small" type="text" @click="handleEdit(scope.$index, scope.row)"><i class="el-icon-edit"></i></el-button>
 						<el-button size="small" type="text" @click="handleDelete(scope.$index, scope.row)" ><i class="el-icon-delete"></i></el-button>
 					</template>

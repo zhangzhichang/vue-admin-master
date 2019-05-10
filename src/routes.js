@@ -12,6 +12,7 @@ import configManager from './views/configmanager/configmanager.vue'
 
 import utilsSiteManager from  './views/sweetzutils/sitemanager'
 import utilsConfigManager from './views/sweetzutils/configmanager'
+import utilsFileManager from './views/sweetzutils/filemanager'
 
 let routes = [
     {
@@ -60,7 +61,8 @@ let routes = [
         iconCls: 'el-icon-setting',
         children: [
             { path: '/utils/siteManager', component: utilsSiteManager, name: '站点管理' },
-            { path:'/utils/configManager' ,component: utilsConfigManager , name: '配置管理'}
+            { path:'/utils/configManager' ,component: utilsConfigManager , name: '配置管理'},
+            { path:'/utils/fileManager' ,component: utilsFileManager , name: '文件管理'}
         ]
     }
 

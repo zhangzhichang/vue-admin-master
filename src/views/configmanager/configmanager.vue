@@ -43,7 +43,7 @@
 				<el-table-column prop="isPublish" label="是否发布" :formatter="formatPublish" width="160">
 				</el-table-column>
 				<el-table-column label="操作" width="100" fixed="right">
-					<template scope="scope">
+					<template slot-scope="scope">
 						<el-button size="small" type="text" @click="handleEdit(scope.$index, scope.row)"><i class="el-icon-edit"></i></el-button>
 						<el-button size="small" type="text" @click="handleDel(scope.$index, scope.row)" ><i class="el-icon-delete"></i></el-button>
 					</template>

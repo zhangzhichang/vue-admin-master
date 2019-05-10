@@ -18,4 +18,9 @@ export const getConfigInfoPage = param =>{return getRequest(base_url + '/sysconf
 export const addConfigInfo = param =>{return postRequest(base_url + '/sysconfig/insert' , param);}
 export const modifyConfigInfo = param =>{return putRequest(base_url + '/sysconfig/update' , param);}
 
+//file
+export const getDdownloadUrl = param =>{return getRequest(base_url+'/file/downloadUrl/' + param.fileId);}
+export const deletedFile = param =>{return deleteRequest(base_url+'/file/deleted/' +param.fileId);}
+export const getFileListPage = param =>{return getRequest(base_url + '/file/selectPage/' + param.pageNum + '/' + param.pageSize , param );}
+
 
